@@ -20,5 +20,6 @@ hugo server --baseURL=${HUGO_BASE_URL:-http://mifo.sk} \
   --appendPort=false \
   --verboseLog \
   --logFile=$pipe &
+
 trap "kill $!" EXIT
 wait $hugo_pid
